@@ -98,12 +98,11 @@ def sortCountry(df):
     plt.title('Insert Title')
     plt.axis('equal')
     plt.legend(loc="lower right")
-    #plt.show()
     plt.savefig("pie-chart.png", bbox_inches = 'tight')
 
  #Exit program
-    exit = input("\nTo end this program press E: ")
-    if exit.lower() == "e":
+    exit = input("\nTo end this program press X: ")
+    if exit.lower() == "x":
       sys.exit("Closing Program...")
     else:
       print("Invalid input")
