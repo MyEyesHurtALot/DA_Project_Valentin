@@ -14,6 +14,8 @@
 #import pandas and matplotlib for data analysis
 import pandas as pd
 import matplotlib.pyplot as plt
+#import sys to help exit program
+import sys
 
 #########################################################################
 #IMPORT Pandas Library for Data Analysis
@@ -96,8 +98,15 @@ def sortCountry(df):
     plt.title('Insert Title')
     plt.axis('equal')
     plt.legend(loc="lower right")
-    plt.show()
+    #plt.show()
+    plt.savefig("pie-chart.png", bbox_inches = 'tight')
 
+ #Exit program
+    exit = input("\nTo end this program press E: ")
+    if exit.lower() == "e":
+      sys.exit("Closing Program...")
+    else:
+      print("Invalid input")
     
 
     return
